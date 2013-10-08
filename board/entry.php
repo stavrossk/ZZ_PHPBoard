@@ -6,9 +6,9 @@ include("./inc/func.sort.php");
 ////////////////////////////////////// SORTIERFUNKTION ENDE ////////////
 
 function gettime($time) {
-global $weekdays, $dateorder, $cfg_p_mesi2, $cfg_p_mesi3, $cfg_p_mesi4;
+global $weekdays, $DateOrder, $cfg_p_mesi2, $cfg_p_mesi3, $cfg_p_mesi4;
 $time = explode(' ',$time);
-if($dateorder!='en'){
+if($DateOrder!='en'){
 	$date = explode('/',$time[0]);
 	$time[0] = $date[1].'.'.$date[0].'.'.$date[2];
 } else {
@@ -19,9 +19,9 @@ return $date;
 }
 
 function getftime($time) {
-global $weekdays, $datesub, $dateorder;
+global $weekdays, $datesub, $DateOrder;
 $time = explode(' ',$time);
-	if($dateorder!='en'){
+	if($DateOrder!='en'){
 		$date = explode('/',$time[0]);
 		$time[0] = $date[1].'/'.$date[0].'/'.$date[2];
 	} 
@@ -29,7 +29,7 @@ $date = sprintf("%08s %02s %08s", $time[1], substr($weekdays[$time[2]],0,$datesu
 return $date;
 }
 
-$data = "./".$cfg_msgdir."/" . $show . ".txt";
+$data = "./".$cfg_MsgDir."/" . $show . ".txt";
 $follow_up = "<b>$cfg_p_followups</b><br><br>";
 if (file_exists($data)) {
 	$file = fopen("$data","r");
@@ -49,7 +49,7 @@ if (file_exists($data)) {
 	$dem = $show.".";
 	while (list ($key, $val) = each ($all)) {
 		$msg_num = substr ($val, 0,strlen($dem));
-		if ((strlen($val) > strlen($dem)) and ($msg_num == $dem)) { // wenn Länge größer und der EIntrag mit den Selben Nummern beginnt = Follow_up
+		if ((strlen($val) > strlen($dem)) and ($msg_num == $dem)) { // wenn Lï¿½nge grï¿½ï¿½er und der EIntrag mit den Selben Nummern beginnt = Follow_up
 			$sub = explode (".", $val);
 			$sab = explode (".", $dem);
 			$len = (count($sub)-count($sab))*6;
@@ -57,7 +57,7 @@ if (file_exists($data)) {
 			for ($i = 1; $i <= $len; $i++) {
 				$pusher = $pusher . "&nbsp;";
 			}
-			$entry = "./".$cfg_msgdir."/" . $val . ".txt";
+			$entry = "./".$cfg_MsgDir."/" . $val . ".txt";
 			if (file_exists($entry)) {
 			$ffile = fopen("$entry","r");
 			$fname = chop(fgets($ffile, 1000));
@@ -89,7 +89,7 @@ if (file_exists($data)) {
 		$answer = explode(".",$show);
 		array_splice($answer,-1);
 		$answer = implode(".",$answer);
-		$entry = "./".$cfg_msgdir."/" . $answer . ".txt";
+		$entry = "./".$cfg_MsgDir."/" . $answer . ".txt";
 		if (file_exists($entry)) {
 		$ffile = fopen("$entry","r");
 		$fname = chop(fgets($ffile, 1000));

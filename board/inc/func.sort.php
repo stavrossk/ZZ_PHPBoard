@@ -2,7 +2,7 @@
 ////////////////////////////////////// BEGIN Sortieren
 // Alle Dateien im Verzeichnis werden eingelesen und nach Gliederungspunkten sortiert //
 
-$handle= opendir ('./'.$cfg_msgdir);
+$handle= opendir ('./'.$cfg_MsgDir);
 $main = array();
 $all = array();	
 while (false !== ($file = readdir ($handle))) { // Alle Datein im Verzeichnis einlesesn bis false
@@ -38,7 +38,7 @@ function sorter($a,$b) {
 }
 
 $anz = 1;
-foreach($all as $num) { // Längsten Unterpunkt ermitteln (=höchste Anzahl an Trennpunkten)
+foreach($all as $num) { // Lï¿½ngsten Unterpunkt ermitteln (=hï¿½chste Anzahl an Trennpunkten)
 	$num = explode(".",$num);
 	$an = count($num);
 	if ($an > $anz) {

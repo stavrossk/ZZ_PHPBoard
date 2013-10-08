@@ -1,49 +1,105 @@
 <?php
-include("./inc/inc.page_top.php");
 
-function gettime($time) {
-global $weekdays, $datesub, $dateorder;
-$time = explode(' ',$time);
-	if($dateorder!='en'){
-		$date = explode('/',$time[0]);
-		$time[0] = $date[1].'/'.$date[0].'/'.$date[2];
-	} 
-$date = sprintf("%08s %02s %08s", $time[1], substr($weekdays[$time[2]],0,$datesub), $time[0]);
-return $date;
-}
+    include("./inc/inc.page_top.php");
 
-function printentry($entry) {
-		global $weekdays, $datesub, $dateorder, $cfg_msgdir;
+
+    function GetTime($time)
+    {
+
+        global $weekdays, $datesub, $DateOrder;
+
+        $time = explode(' ',$time);
+
+        if($DateOrder!='en')
+        {
+
+		    $date = explode('/',$time[0]);
+
+            $time[0] = $date[1].'/'.$date[0].'/'.$date[2];
+
+        }
+
+        $date = sprintf
+        (
+
+            "%08s %02s %08s",
+            $time[1],
+            substr($weekdays[$time[2]],0,$datesub),
+            $time[0]
+
+        );
+
+        return $date;
+
+    }
+
+
+    function PrintEntry($entry)
+    {
+
+		global $weekdays, $datesub, $DateOrder, $cfg_MsgDir;
 		
 		$sub = explode (".", $entry);
-		$len = (count($sub)-1)*6;
-		for ($i = 1; $i <= $len; $i++) {
-		$pusher = $pusher . "&nbsp;";
-		}
+
+        $len = (count($sub)-1)*6;
+
+        for ($i = 1; $i <= $len; $i++)
+        {
+
+            $pusher = "";
+
+		    $pusher = $pusher . "&nbsp;";
+
+        }
+
 		
-		$file = "./".$cfg_msgdir."/" . $entry . ".txt";
-		if (file_exists($file)) {
-		$tfile = fopen("$file","r");
-		$name = chop(fgets($tfile, 1000));
-		$email = chop(fgets($tfile, 1000));
-		$subject = chop(fgets($tfile, 1000));
-		$time = chop(fgets($tfile, 1000));
+		$file = "./".$cfg_MsgDir."/" . $entry . ".txt";
+
+        if (file_exists($file))
+        {
+
+		    $tfile = fopen("$file","r");
+
+            $name = chop(fgets($tfile, 1000));
+
+            $email = chop(fgets($tfile, 1000));
+
+            $subject = chop(fgets($tfile, 1000));
+
+            $time = chop(fgets($tfile, 1000));
 		
-		$date= gettime($time);
+		    $date= GetTime($time);
 		
-		fclose($tfile);
-		$entry = "entry.php?show=".$entry;
-		echo "$pusher<font face=\"$cfg_type\"><b>&#8226; &nbsp;<a href=\"$entry\" class=forum>$subject</a></b> - ";
-if (preg_match("/[a-zA-Z0-9]/",$email)){
-	echo "<a href=\"mailto:$email\">";
-	$tag = "a";
-} else {
-	echo "<b>";
-	$tag = "b";
-}
-echo $name;
-echo "</$tag> - <i>$date</i></font><br>";
-	}
+		    fclose($tfile);
+
+            $entry = "entry.php?show=".$entry;
+
+            echo "$pusher<font face=\"$cfg_type\"><b>&#8226; &nbsp;<a href=\"$entry\" class=forum>$subject</a></b> - ";
+
+            if (preg_match("/[a-zA-Z0-9]/",$email))
+            {
+
+	            echo "<a href=\"mailto:$email\">";
+
+                $tag = "a";
+
+            }
+            else
+            {
+
+                echo "<b>";
+
+                $tag = "b";
+
+            }
+
+            echo $name;
+
+            echo "</$tag> - <i>$date</i></font><br>";
+
+        }
+
+
 }
 
 ////////////////////////////////////// SORTIERFUNKTION BEGIN ////////////
@@ -66,11 +122,11 @@ $msg_num = key($main) + 1;
 include("./inc/inc.form_top.php"); 
 
 while (list ($m_key, $m_val) = each ($main)) {
-    printentry($m_key);
+    PrintEntry($m_key);
 	if (is_array($m_val)) {
 	sort($m_val);
 		while (list ($s_key, $s_val) = each ($m_val)) {		
-			printentry($s_val);
+			PrintEntry($s_val);
 		}
 	}
 	//echo "</p>"; oben ist <p> in printmain auch entfernt worden

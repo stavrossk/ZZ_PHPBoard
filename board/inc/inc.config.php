@@ -46,7 +46,7 @@
 ##------------------------------------------------------------------------------------------##
 ## Setting the Width of the forum-table														##
 $cfg_table_width ='550';																	##
-$cfg_msgdir = 'msg';
+$cfg_MsgDir = 'msg';
 ## The rest of the cosmetic settings (colors, FontFace, etc) can be adjusted 				##
 ## in the styles.css-file in the 'inc'-directory.											##
 ## Further explanations are in that file !													##
@@ -60,7 +60,7 @@ $weekdays = array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday');	
 $datesub = '3'; 																			##
 ## Date-Format:																				##
 ## en= Month/Day/Year | eu= Day/Month/Year													##
-$dateorder = 'en'; # = 'eu';																##
+$DateOrder = 'en'; # = 'eu';																##
 ##																							##
 ##																							##
 ## LANGUAGE																					##
