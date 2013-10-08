@@ -1,28 +1,50 @@
+
 <?php
-echo <<<ENTRY01
-<font face="$cfg_type">
-<table width="$cfg_table_width" border="0" cellspacing="0" cellpadding="15" align="center">
-<tr>
-<td class=ta-tblr>
-      <center>
-        <font size="6" face="$cfg_type">$subject</font> 
-      </center>
-</td></tr>
-<tr>
-<td class=ta-blr> $cfg_p_mesi1 <font face="$cfg_type">
+
+    echo <<<ENTRY01
+        <font face="$cfg_type">
+        <table width="$cfg_table_width" border="0" cellspacing="0" cellpadding="15" align="center">
+        <tr>
+            <td class=ta-tblr>
+                <center>
+                    <font size="6" face="$cfg_type">$subject</font>
+                </center>
+            </td>
+        </tr>
+        <tr>
+        <td class=ta-blr> $cfg_p_mesi1 <font face="$cfg_type">
 ENTRY01;
-if (preg_match("/[a-zA-Z0-9]/",$email)){
-	echo "<a href=\"mailto:$email\" title=\"Email:  $email \">";
-} else {
-	echo "<b>";
-}
-echo $name;
-if (preg_match("/[a-zA-Z0-9]/",$email)){
-	echo "</a>";
-} else {
-	echo "</b>";
-}	
-echo <<<ENTRY02
+
+
+    if (preg_match("/[a-zA-Z0-9]/",$email))
+    {
+
+	    echo "<a href=\"mailto:$email\" title=\"Email:  $email \">";
+
+    }
+    else
+    {
+
+	    echo "<b>";
+
+    }
+
+    echo $name;
+
+    if (preg_match("/[a-zA-Z0-9]/",$email))
+    {
+
+	    echo "</a>";
+
+    }
+    else
+    {
+
+	    echo "</b>";
+
+    }
+
+    echo <<<ENTRY02
 	</font> 
       $cfg_p_mesi2 <font face="$cfg_type">$time</font>:
 	  $answer
@@ -30,24 +52,35 @@ echo <<<ENTRY02
 <font face="$cfg_type"><b>$message</b></font> 
       <p><br>
 ENTRY02;
-if (preg_match("/[a-zA-Z0-9]/",$url)){
-	if (!preg_match("/[a-zA-Z0-9]/",$url_title)){
-		$url_title = $url;
-	}
-echo "<b>&#8226; &nbsp;</b><a href=\"$url\">$url_title</a><br><br>";
-}
 
-echo <<<ENTRY03
-</td>
-</tr>
-<tr><a name="followups">
-<td class=ta-blr>
 
-$follow_up
+    if (preg_match("/[a-zA-Z0-9]/",$url))
+    {
 
-</td></tr></table>
-<br>
-<table width="$cfg_table_width" border="0" cellspacing="0" cellpadding="15" align="center">
+	    if (!preg_match("/[a-zA-Z0-9]/",$url_title))
+        {
+
+		    $url_title = $url;
+
+        }
+
+        echo "<b>&#8226; &nbsp;</b><a href=\"$url\">$url_title</a><br><br>";
+
+    }
+
+
+    echo <<<ENTRY03
+        </td>
+        </tr>
+        <tr>
+            <a name="followups">
+            <td class=ta-blr>
+
+            $follow_up
+
+        </td></tr></table>
+        <br>
+        <table width="$cfg_table_width" border="0" cellspacing="0" cellpadding="15" align="center">
 <tr>
 <td>
 <b><a name="postfp">$cfg_p_write_fu</a></b>
@@ -96,4 +129,9 @@ $follow_up
 </table>
 </font>
 ENTRY03;
+
+
+
+
+
 ?>

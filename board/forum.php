@@ -58,23 +58,23 @@
         if (file_exists($file))
         {
 
-		    $tfile = fopen("$file","r");
+		    $tFile = fopen("$file","r");
 
-            $name = chop(fgets($tfile, 1000));
+            $name = chop(fgets($tFile, 1000));
 
-            $email = chop(fgets($tfile, 1000));
+            $email = chop(fgets($tFile, 1000));
 
-            $subject = chop(fgets($tfile, 1000));
+            $subject = chop(fgets($tFile, 1000));
 
-            $time = chop(fgets($tfile, 1000));
+            $time = chop(fgets($tFile, 1000));
 		
 		    $date= GetTime($time);
 		
-		    fclose($tfile);
+		    fclose($tFile);
 
             $entry = "entry.php?show=".$entry;
 
-            echo "$pusher<font face=\"$cfg_type\"><b>&#8226; &nbsp;<a href=\"$entry\" class=forum>$subject</a></b> - ";
+            echo "$pusher<font face=\"\$cfg_type\"><b>&#8226; &nbsp;<a href=\"$entry\" class=forum>$subject</a></b> - ";
 
             if (preg_match("/[a-zA-Z0-9]/",$email))
             {
@@ -100,48 +100,88 @@
         }
 
 
-}
+    }
 
-////////////////////////////////////// SORTIERFUNKTION BEGIN ////////////
-include("./inc/func.sort.php");
-////////////////////////////////////// SORTIERFUNKTION ENDE ////////////
+    ////////////////////////////////////// Sorter Function BEGIN ////////////
+    include("./inc/func.sort.php");
+    ////////////////////////////////////// Sorter function END ////////////
 
-foreach($all as $val) {			
-		if (strstr ($val, ".") == "") {
+
+
+    foreach($all as $val)
+    {
+
+		if (strstr ($val, ".") == "")
+        {
+
 			$main[($val)] = array();
-		} else {
+
+        }
+        else
+        {
+
 			$sub = explode (".", $val);
+
 			$main[$sub[0]][] = $val;
-		}
-}
 
-krsort($main);
-$msg_num = key($main) + 1;
+        }
 
-////////////////////////////////////// MESSAGE BEGIN ////////////
-include("./inc/inc.form_top.php"); 
+    }
 
-while (list ($m_key, $m_val) = each ($main)) {
-    PrintEntry($m_key);
-	if (is_array($m_val)) {
-	sort($m_val);
-		while (list ($s_key, $s_val) = each ($m_val)) {		
-			PrintEntry($s_val);
-		}
-	}
-	//echo "</p>"; oben ist <p> in printmain auch entfernt worden
-}
+    krsort($main);
 
-if (count($all) == 0) { // Falls noch gar keine NAchricht im Forum steht
-echo "<center><b>- $cfg_m_no_message -</b></center>";
-} else {
-	echo "<br>";
-}
+    $msg_num = key($main) + 1;
 
-echo "</td></tr></table>"; // table-bottom zu -- include("./inc/mform_top.php"); --
-////////////////////////////////////// MESSAGE END ////////////
+    ////////////////////////////////////// MESSAGE BEGIN ////////////
+    include("./inc/inc.form_top.php");
 
-echo <<<PostForm
+
+    while (list ($m_key, $m_val) = each ($main))
+    {
+
+        PrintEntry($m_key);
+
+        if (is_array($m_val))
+        {
+
+	        sort($m_val);
+
+            while (list ($s_key, $s_val) = each ($m_val))
+            {
+
+			    PrintEntry($s_val);
+
+            }
+
+	    }
+
+	    //echo "</p>"; oben ist <p> in printmain auch entfernt worden
+
+    }
+
+
+    if (count($all) == 0)
+    {
+
+        // Falls noch gar keine NAchricht im Forum steht
+
+        echo "<center><b>- $cfg_m_no_message -</b></center>";
+
+    }
+    else
+    {
+
+	    echo "<br>";
+
+    }
+
+
+    echo "</td></tr></table>";
+    // table-bottom zu -- include("./inc/mform_top.php"); --
+
+    ////////////////////////////////////// MESSAGE END ////////////
+
+    echo <<<PostForm
 <a name="post"><center>
   <table width="$cfg_table_width" border="0" cellspacing="0" cellpadding="10" class=ta-tblr>
     <tr>
@@ -203,5 +243,7 @@ echo <<<PostForm
   </form>
 PostForm;
 
-include("./inc/inc.page_bot.php");
+    include("./inc/inc.page_bot.php");
+
+
 ?>

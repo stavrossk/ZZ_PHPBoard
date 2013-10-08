@@ -4,7 +4,7 @@
     <list default="true" id="1aeec1ea-0e1e-4cd8-a90b-df353761b733" name="Default" comment="" />
     <ignored path="ZZ_PHPBoard.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/a.dummy" changelist="1aeec1ea-0e1e-4cd8-a90b-df353761b733" time="1381244855108" ignored="false" />
+    <file path="/a.dummy" changelist="1aeec1ea-0e1e-4cd8-a90b-df353761b733" time="1381249058495" ignored="false" />
     <file path="/forum.php" changelist="1aeec1ea-0e1e-4cd8-a90b-df353761b733" time="1381244620474" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,24 +24,7 @@
     <favorites_list name="ZZ_PHPBoard" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="forum.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/board/forum.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.22884615">
-              <folding>
-                <element signature="e#177#316#0" expanded="false" />
-                <element signature="e#334#488#0" expanded="false" />
-                <element signature="e#695#810#0" expanded="false" />
-                <element signature="e#874#1720#0" expanded="false" />
-                <element signature="e#1379#1629#0" expanded="false" />
-                <element signature="e#1538#1629#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -53,8 +36,14 @@
       <list>
         <option value="$PROJECT_DIR$/board/faq.php" />
         <option value="$PROJECT_DIR$/board/inc/inc.page_top.php" />
-        <option value="$PROJECT_DIR$/board/forum.php" />
         <option value="$PROJECT_DIR$/board/send.php" />
+        <option value="$PROJECT_DIR$/board/forum.php" />
+        <option value="$PROJECT_DIR$/board/index.htm" />
+        <option value="$PROJECT_DIR$/board/entry.php" />
+        <option value="$PROJECT_DIR$/board/inc/func.sort.php" />
+        <option value="$PROJECT_DIR$/board/inc/styles.css" />
+        <option value="$PROJECT_DIR$/board/inc/inc.page_bot.php" />
+        <option value="$PROJECT_DIR$/board/inc/inc.entry.php" />
       </list>
     </option>
   </component>
@@ -160,7 +149,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="inc" />
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -174,8 +163,8 @@
     <property name="options.lastSelected" value="appearance" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -208,14 +197,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26993865" sideWeight="0.9965812" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28834355" sideWeight="0.9965812" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -224,6 +212,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -292,203 +281,132 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/board/send.php">
+    <entry file="file://$PROJECT_DIR$/board/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#refresh#0;n#!!top" expanded="false" />
-            <element signature="e#123#759#0" expanded="false" />
-            <element signature="e#775#4575#0" expanded="false" />
-            <element signature="e#797#4558#0" expanded="false" />
-            <element signature="e#821#4247#0" expanded="false" />
-            <element signature="e#850#3855#0" expanded="false" />
-            <element signature="e#990#3465#0" expanded="false" />
-            <element signature="e#1232#2931#0" expanded="false" />
-            <element signature="e#1346#1731#0" expanded="false" />
-            <element signature="e#1815#2343#0" expanded="false" />
-            <element signature="e#2377#2931#0" expanded="false" />
-            <element signature="e#3028#3465#0" expanded="false" />
-            <element signature="e#3493#3855#0" expanded="false" />
-            <element signature="e#3891#4247#0" expanded="false" />
-            <element signature="e#4275#4558#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board/inc/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board/send.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#refresh#0;n#!!top" expanded="false" />
-            <element signature="e#123#759#0" expanded="false" />
-            <element signature="e#775#4575#0" expanded="false" />
-            <element signature="e#797#4558#0" expanded="false" />
-            <element signature="e#821#4247#0" expanded="false" />
-            <element signature="e#850#3855#0" expanded="false" />
-            <element signature="e#990#3465#0" expanded="false" />
-            <element signature="e#1232#2931#0" expanded="false" />
-            <element signature="e#1346#1731#0" expanded="false" />
-            <element signature="e#1815#2343#0" expanded="false" />
-            <element signature="e#2377#2931#0" expanded="false" />
-            <element signature="e#3028#3465#0" expanded="false" />
-            <element signature="e#3493#3855#0" expanded="false" />
-            <element signature="e#3891#4247#0" expanded="false" />
-            <element signature="e#4275#4558#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board/send.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#refresh#0;n#!!top" expanded="false" />
-            <element signature="e#123#759#0" expanded="false" />
-            <element signature="e#775#4575#0" expanded="false" />
-            <element signature="e#797#4558#0" expanded="false" />
-            <element signature="e#821#4247#0" expanded="false" />
-            <element signature="e#850#3855#0" expanded="false" />
-            <element signature="e#990#3465#0" expanded="false" />
-            <element signature="e#1232#2931#0" expanded="false" />
-            <element signature="e#1346#1731#0" expanded="false" />
-            <element signature="e#1815#2343#0" expanded="false" />
-            <element signature="e#2377#2931#0" expanded="false" />
-            <element signature="e#3028#3465#0" expanded="false" />
-            <element signature="e#3493#3855#0" expanded="false" />
-            <element signature="e#3891#4247#0" expanded="false" />
-            <element signature="e#4275#4558#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board/send.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#refresh#0;n#!!top" expanded="false" />
-            <element signature="e#123#759#0" expanded="false" />
-            <element signature="e#775#4575#0" expanded="false" />
-            <element signature="e#797#4558#0" expanded="false" />
-            <element signature="e#821#4247#0" expanded="false" />
-            <element signature="e#850#3855#0" expanded="false" />
-            <element signature="e#990#3465#0" expanded="false" />
-            <element signature="e#1232#2931#0" expanded="false" />
-            <element signature="e#1346#1731#0" expanded="false" />
-            <element signature="e#1815#2343#0" expanded="false" />
-            <element signature="e#2377#2931#0" expanded="false" />
-            <element signature="e#3028#3465#0" expanded="false" />
-            <element signature="e#3493#3855#0" expanded="false" />
-            <element signature="e#3891#4247#0" expanded="false" />
-            <element signature="e#4275#4558#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board/send.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#refresh#0;n#!!top" expanded="false" />
-            <element signature="e#123#759#0" expanded="false" />
-            <element signature="e#775#4575#0" expanded="false" />
-            <element signature="e#797#4558#0" expanded="false" />
-            <element signature="e#821#4247#0" expanded="false" />
-            <element signature="e#850#3855#0" expanded="false" />
-            <element signature="e#990#3465#0" expanded="false" />
-            <element signature="e#1232#2931#0" expanded="false" />
-            <element signature="e#1346#1731#0" expanded="false" />
-            <element signature="e#1815#2343#0" expanded="false" />
-            <element signature="e#2377#2931#0" expanded="false" />
-            <element signature="e#3028#3465#0" expanded="false" />
-            <element signature="e#3493#3855#0" expanded="false" />
-            <element signature="e#3891#4247#0" expanded="false" />
-            <element signature="e#4275#4558#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board/forum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board/faq.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board/faq.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="17" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.54221386" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/board/entry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="79" column="0" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-2.4326923">
+          <folding>
+            <element signature="n#GetTime#0;n#!!top" expanded="false" />
+            <element signature="n#getftime#0;n#!!top" expanded="false" />
+            <element signature="e#1041#1268#0" expanded="false" />
+            <element signature="e#1125#1244#0" expanded="false" />
+            <element signature="e#1790#1874#0" expanded="false" />
+            <element signature="e#1933#3665#0" expanded="false" />
+            <element signature="e#2406#2512#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/board/inc/inc.config.php">
+    <entry file="file://$PROJECT_DIR$/board/faq.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="18" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.88269234" />
+        <state line="38" column="11" selection-start="454" selection-end="454" vertical-scroll-proportion="1.1594747" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/forum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="0" selection-start="2687" selection-end="2687" vertical-scroll-proportion="0.98874295" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/msg/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/board/inc/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="14" selection-start="866" selection-end="866" vertical-scroll-proportion="0.91234344">
+        <state line="20" column="20" selection-start="370" selection-end="370" vertical-scroll-proportion="0.608229">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/inc/inc.form_top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/inc/inc.page_bot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.15947467">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/board/inc/inc.page_top.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="0.15947467">
+        <state line="16" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="0.51031893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/inc/func.sort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="19" selection-start="221" selection-end="221" vertical-scroll-proportion="0.22884615">
           <folding>
-            <element signature="e#48#400#0" expanded="false" />
+            <element signature="e#249#594#0" expanded="false" />
+            <element signature="n#sorter#0;n#!!top" expanded="false" />
+            <element signature="e#750#1187#0" expanded="false" />
+            <element signature="e#1011#1104#0" expanded="false" />
+            <element signature="e#1117#1182#0" expanded="false" />
+            <element signature="e#1217#1456#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/board/send.php">
+    <entry file="file://$PROJECT_DIR$/board/inc/inc.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="2" selection-start="4579" selection-end="4579" vertical-scroll-proportion="0.35084426">
+        <state line="53" column="56" selection-start="3025" selection-end="3025" vertical-scroll-proportion="0.26153848">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/inc/inc.entry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.60600376">
           <folding>
-            <element signature="n#refresh#0;n#!!top" expanded="false" />
-            <element signature="e#123#759#0" expanded="false" />
-            <element signature="e#775#4575#0" expanded="false" />
-            <element signature="e#797#4558#0" expanded="false" />
-            <element signature="e#821#4247#0" expanded="false" />
-            <element signature="e#850#3855#0" expanded="false" />
-            <element signature="e#990#3465#0" expanded="false" />
-            <element signature="e#1232#2931#0" expanded="false" />
-            <element signature="e#1346#1731#0" expanded="false" />
-            <element signature="e#1815#2343#0" expanded="false" />
-            <element signature="e#2377#2931#0" expanded="false" />
-            <element signature="e#3028#3465#0" expanded="false" />
-            <element signature="e#3493#3855#0" expanded="false" />
-            <element signature="e#3891#4247#0" expanded="false" />
-            <element signature="e#4275#4558#0" expanded="false" />
+            <element signature="e#17#438#0" expanded="false" />
+            <element signature="e#446#605#0" expanded="false" />
+            <element signature="e#570#605#0" expanded="false" />
+            <element signature="e#628#740#0" expanded="false" />
+            <element signature="e#704#740#0" expanded="false" />
+            <element signature="e#751#917#0" expanded="false" />
+            <element signature="e#925#1151#0" expanded="false" />
+            <element signature="e#975#1066#0" expanded="false" />
+            <element signature="e#1163#3528#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/board/forum.php">
+    <entry file="file://$PROJECT_DIR$/board/inc/inc.error.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="0.22884615">
-          <folding>
-            <element signature="e#177#316#0" expanded="false" />
-            <element signature="e#334#488#0" expanded="false" />
-            <element signature="e#695#810#0" expanded="false" />
-            <element signature="e#874#1720#0" expanded="false" />
-            <element signature="e#1379#1629#0" expanded="false" />
-            <element signature="e#1538#1629#0" expanded="false" />
-          </folding>
+        <state line="17" column="4" selection-start="420" selection-end="420" vertical-scroll-proportion="0.5557692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="301" selection-end="301" vertical-scroll-proportion="0.32692307">
+          <folding />
         </state>
       </provider>
     </entry>

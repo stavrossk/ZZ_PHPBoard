@@ -1,6 +1,8 @@
 <?php
-echo <<<EndOfPage
-</body>
-</html>
+
+    echo <<<EndOfPage
+        </body>
+        </html>
 EndOfPage;
+
 ?>
